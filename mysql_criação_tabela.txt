@@ -1,32 +1,32 @@
-create data base db_rh; /* criar banco de dados.
+create data base db_rh; 
 use db_rh;
 
-/* criar tabela*\
 create table tb_funcionarios(
 id bigint auto_increment,
 nome varchar(20) not null,
 idedade int (3), 
 endereço varchar(100),
-rg int(15),
-cpf int(15),
+rg int,
+cpf int,
 ativo boolean,
 primary key (id)
 );
 
 
 
-insert into tb_funcionarios (nome, endereço, ativo, rg, cpf) values ("Nadyne","A",true,1,1)/* inserir informações na tabela *\
+insert into tb_funcionarios (nome, endereço, ativo, rg, cpf) values ("Nadyne","A",true,1,1)
 
-delete from tb_funcionarios where condição (1,2,3,5,6(apenas exemplos)); /* apagar varios dados de uma vez da tabela *\
+delete from tb_funcionarios where condição (1,2,3,5,6(apenas exemplos)); 
 
-select * from tb_funcionarios where salario >2000; */ mostrar salarios menor que 2000 na tabela *\
+select * from tb_funcionarios where salario >2000;
 
-update tb_funcionarios set idedade= 60 /* atualizar dados da tabela *\
+update tb_funcionarios set idedade= 60
 where id = 5; continuação
 
-alter table tb_funcionarios rename column idedade to idade; /* alterar nome da tabela*\
+alter table tb_funcionarios rename column idedade to idade;
 
-alter table tb_funcionarios add salario int after cpf; /*adicionar colula na tabela*\
+alter table tb_funcionarios add salario int after cpf; 
 
-ALTER TABLE tb_funcionarios MODIFY COLUMN rg int(15); /* atualizar quantidade de caracter dentro da tabela*\
+ALTER TABLE tb_funcionarios MODIFY COLUMN rg int(15);
 
+/*outras auterações foram feitas com o mesmo codigo alterando somente os dados*\
